@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		h1 {text-align:  center;}
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 125px;
+			font-family: 'Courier New', Helvetica, sans-serif;
+		}
+		.center2 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 306px;
+			font-family: 'Courier New', Helvetica, sans-serif;
+		}
+		.centerbutton {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		a.firstbutton {
+			-webkit-appearance: button;
+    			-moz-appearance: button;
+    			appearance: button;
+			border: none;
+			color: gray;
+			font-size: 36px;
+		}
+		.typewriter h1 {
+			overflow: hidden;
+			white-space: nowrap;
+			margin: 0 auto; 
+			letter-spacing: .15em; 
+			font-size: 1.2vw;
+			animation: 
+			typing 3.5s steps(40, end),
+			blink-caret .75s step-end infinite;
+		}
+		.typewriter2 h1 {
+			font-size: 1.2vw;
+			overflow: hidden;
+			white-space: nowrap;
+			margin: 0 auto; 
+			letter-spacing: .15em; 
+			opacity:  0;
+			animation: 
+			typing 3.5s steps(40, end),
+			blink-caret .75s step-end infinite;
+			animation-fill-mode: forwards;
+			animation-delay: 3s;
+		}
+		.typewriter3 h1 {
+			overflow: hidden;
+			white-space: nowrap;
+			margin: 0 auto; 
+			letter-spacing: .15em; 
+			opacity:  0;
+			animation: 
+			typing 3.5s steps(40, end),
+			blink-caret .75s step-end infinite;
+			animation-fill-mode: forwards;
+			animation-delay: 39s;
+			font-size: 1.2vw;
+		}
+		.typewriter4 h1 {
+			overflow: hidden;
+			white-space: nowrap;
+			margin: 0 auto; 
+			letter-spacing: .15em; 
+			opacity:  0;
+			animation: 
+			typing 3.5s steps(40, end),
+			blink-caret .75s step-end infinite;
+			animation-fill-mode: forwards;
+			animation-delay: 43s;
+		}
+		@keyframes typing {
+			0% {
+				opacity:0;
+				width:0;
+			}
+			1% {
+				opacity:1;
+			}
+			100% {
+				opacity:1;
+				width:100%;
+			}
+		}
+		.fade-in {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 3s;
+			font-size: 10px;
+		}
+		.fade-in1 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 9s;
+			font-size: 10px;
+		}
+		.fade-in2 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 14s;
+			font-size: 10px;
+		}
+		.fade-in3 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 19s;
+			font-size: 10px;
+		}
+		.fade-in4 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 24s;
+			font-size: 10px;
+		}
+		.fade-in5 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 29s;
+			font-size: 10px;
+		}
+		.fade-in5 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 29s;
+			font-size: 10px;
+		}
+		.fade-in6 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 34s;
+			font-size: 10px;
+		}
+		.fade-in7 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 43s;
+		}
+		@keyframes fadeIn {
+			0% {
+				opacity:0;
+			}
+			100% {
+				opacity:1;
+			}
+		}
+
+		@-moz-keyframes fadeIn {
+			0% {
+				opacity:0;
+			}
+			100% {
+				opacity:1;
+			}
+		}
+
+		@-webkit-keyframes fadeIn {
+			0% {
+				opacity:0;
+			}
+			100% {
+				opacity:1;
+			}
+		}
+
+		@-o-keyframes fadeIn {
+			0% {
+				opacity:0;
+			}
+			100% {
+				opacity:1;
+			}
+		}
+
+		@-ms-keyframes fadeIn {
+			0% {
+				opacity:0;
+			}
+			100% {
+				opacity:1;
+			}
+		</style>
+		<title>Nikies the Byzantine</title>
+	</head>
+	<body style="background-color:gainsboro;">
+		<div class="center typewriter">
+			<h1>Further reading (updated over time):</h1>
+		</div>
+		<div class="centerbutton fade-in">
+			<a href="https://youcanforgetthewords.com/AnswerToEvil" class="firstbutton">1. The Answer to Evil.</button>
+		</div>
+		<div class="centerbutton fade-in">
+			<a href="https://youcanforgetthewords.com/ADebateAtCourt" class="firstbutton">2. A Debate At Court</button>
+		</div>
+		<div class="centerbutton fade-in">
+			<a href="https://youcanforgetthewords.com/ThoseWhoWishToBe" class="firstbutton">3. Those Who Wish to Be</button>
+		</div>
+	</body>
+	</html>
