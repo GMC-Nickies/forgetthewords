@@ -1,109 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<style>
-		h1 {text-align:  center;}
-		.center {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 600px;
-			font-family: Papyrus, Helvetica, sans-serif;
-		}
-		.centerbutton {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			border: none;
-		}
-		.button {
-			background-color: #000000;
-			border: none;
-			color: white;
-			padding: 15px 32px;
-			font-size: 24px;
-		}
-		a.firstbutton {
-			-webkit-appearance: button;
-    		-moz-appearance: button;
-    		appearance: button;
-			border: none;
-			color: gray;
-			font-size: 36px;
-		}
+  <meta charset="UTF-8" />
+  <title>Nikies the Byzantine</title>
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-		.fade-in {
-			animation: fadeIn ease 2s;
-			-webkit-animation: fadeIn ease 2s;
-			-moz-animation: fadeIn ease 2s;
-			-o-animation: fadeIn ease 2s;
-			-ms-animation: fadeIn ease 2s;
-		}
-		.fade-in-slow {
-			animation: fadeIn ease 9s;
-			-webkit-animation: fadeIn ease 9s;
-			-moz-animation: fadeIn ease 9s;
-			-o-animation: fadeIn ease 9s;
-			-ms-animation: fadeIn ease 9s;
-		}
-		@keyframes fadeIn {
-			0% {
-				opacity:0;
-			}
-			66% { opacity:0; }
-			100% {
-				opacity:1;
-			}
-		}
+    /* Body styling */
+    body {
+      background-color: gainsboro;
+      font-family: Helvetica, sans-serif;
+      color: #333;
+    }
 
-		@-moz-keyframes fadeIn {
-			0% {
-				opacity:0;
-			}
-			66% { opacity:0; }
-			100% {
-				opacity:1;
-			}
-		}
+    /* A container to help center and limit text width */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
 
-		@-webkit-keyframes fadeIn {
-			0% {
-				opacity:0;
-			}
-			66% { opacity:0; }
-			100% {
-				opacity:1;
-			}
-		}
+    /* Large heading text (preserving Papyrus!) */
+    h1 {
+      text-align: center;
+      font-family: Papyrus, Helvetica, sans-serif;
+      font-size: 1.5em;
+      line-height: 1.4;
+      margin-bottom: 1em;
+    }
 
-		@-o-keyframes fadeIn {
-			0% {
-				opacity:0;
-			}
-			66% { opacity:0; }
-			100% {
-				opacity:1;
-			}
-		}
+    /* The big center (600px) from original */
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+      text-align: center;
+    }
 
-		@-ms-keyframes fadeIn {
-			0% {
-				opacity:0;
-			}
-			66% { opacity:0; }
-			100% {
-				opacity:1;
-			}
-		</style>
-		<title>Nikies the Byzantine</title>
-	</head>
-	<body style="background-color:gainsboro;">
+    /* "centerbutton" for the link */
+    .centerbutton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      margin-top: 1em;
+    }
 
-		<div class="center fade-in">
-			<h1>“The fish trap exists because of the fish; once you’ve gotten the fish, you can forget the trap. The rabbit snare exists because of the rabbit; once you’ve gotten the rabbit, you can forget the snare. Words exist because of meaning; once you’ve gotten the meaning, you can forget the words. Where can I find a man who has forgotten words, so I can have a word with him?” - <i>Zhuangzi</i></h1>
-		</div>
-		<div class="centerbutton fade-in-slow">
-			<a href="https://youcanforgetthewords.com/Nikies" class="firstbutton">Willfully continue.</button>
-		</div>
-	</body>
-	</html>
+    /* "Willfully continue" link styling */
+    a.firstbutton {
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      appearance: button;
+      border: none;
+      color: gray;
+      font-size: 36px;
+      text-decoration: none;
+      background-color: #f0f0f0;
+      padding: 0.3em 0.8em;
+      border-radius: 6px;
+      transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    }
+    a.firstbutton:hover {
+      background-color: #dadada;
+      color: #000;
+      transform: scale(1.03);
+    }
+
+    /* Alternate black button (from .button class) if you need it:
+    .button {
+      background-color: #000;
+      border: none;
+      color: #fff;
+      padding: 15px 32px;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    */
+
+    /* Fade-in animations */
+    .fade-in {
+      animation: fadeIn 2s ease forwards;
+    }
+    .fade-in-slow {
+      animation: fadeIn 9s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      66% { 
+        opacity: 0; 
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Large center block with fade-in -->
+    <div class="center fade-in">
+      <h1>
+        “The fish trap exists because of the fish; once you’ve gotten the fish, you can forget 
+        the trap. The rabbit snare exists because of the rabbit; once you’ve gotten the rabbit, 
+        you can forget the snare. Words exist because of meaning; once you’ve gotten the meaning, 
+        you can forget the words. Where can I find a man who has forgotten words, so I can have 
+        a word with him?”<br><br>
+        – <i>Zhuangzi</i>
+      </h1>
+    </div>
+
+    <!-- Button area with slower fade-in -->
+    <div class="centerbutton fade-in-slow">
+      <a href="https://youcanforgetthewords.com/Nikies" class="firstbutton">
+        Willfully continue.
+      </a>
+    </div>
+
+  </div>
+</body>
+</html>
