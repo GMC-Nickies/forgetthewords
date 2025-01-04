@@ -1,249 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <title>Nikies the Byzantine</title>
-  <!-- Optional: Use a Google Font for a cleaner text style -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link 
-    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&display=swap" 
-    rel="stylesheet"
-  />
+	<style>
+		h1 {text-align:  center;}
+		.center {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 125px;
+			font-family: 'Courier New', Helvetica, sans-serif;
+		}
+		.center2 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 306px;
+			font-family: 'Courier New', Helvetica, sans-serif;
+		}
+		.centerbutton {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		a.firstbutton {
+			-webkit-appearance: button;
+    			-moz-appearance: button;
+    			appearance: button;
+			border: none;
+			color: gray;
+			font-size: 36px;
+		}
+		.typewriter h1 {
+			overflow: hidden;
+			white-space: nowrap;
+			margin: 0 auto; 
+			letter-spacing: .15em; 
+			font-size: 1.2vw;
+			animation: 
+			typing 3.5s steps(40, end),
+			blink-caret .75s step-end infinite;
+		}
+		.typewriter2 h1 {
+			font-size: 1.2vw;
+			overflow: hidden;
+			white-space: nowrap;
+			margin: 0 auto; 
+			letter-spacing: .15em; 
+			opacity:  0;
+			animation: 
+			typing 3.5s steps(40, end),
+			blink-caret .75s step-end infinite;
+			animation-fill-mode: forwards;
+			animation-delay: 3s;
+		}
+		.typewriter3 h1 {
+			overflow: hidden;
+			white-space: nowrap;
+			margin: 0 auto; 
+			letter-spacing: .15em; 
+			opacity:  0;
+			animation: 
+			typing 3.5s steps(40, end),
+			blink-caret .75s step-end infinite;
+			animation-fill-mode: forwards;
+			animation-delay: 39s;
+			font-size: 1.2vw;
+		}
+		.typewriter4 h1 {
+			overflow: hidden;
+			white-space: nowrap;
+			margin: 0 auto; 
+			letter-spacing: .15em; 
+			opacity:  0;
+			animation: 
+			typing 3.5s steps(40, end),
+			blink-caret .75s step-end infinite;
+			animation-fill-mode: forwards;
+			animation-delay: 43s;
+		}
+		@keyframes typing {
+			0% {
+				opacity:0;
+				width:0;
+			}
+			1% {
+				opacity:1;
+			}
+			100% {
+				opacity:1;
+				width:100%;
+			}
+		}
+		.fade-in {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 3s;
+			font-size: 10px;
+		}
+		.fade-in1 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 9s;
+			font-size: 10px;
+		}
+		.fade-in2 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 14s;
+			font-size: 10px;
+		}
+		.fade-in3 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 19s;
+			font-size: 10px;
+		}
+		.fade-in4 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 24s;
+			font-size: 10px;
+		}
+		.fade-in5 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 29s;
+			font-size: 10px;
+		}
+		.fade-in5 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 29s;
+			font-size: 10px;
+		}
+		.fade-in6 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 34s;
+			font-size: 10px;
+		}
+		.fade-in7 {
+			animation: fadeIn ease 3s;
+			-webkit-animation: fadeIn ease 3s;
+			-moz-animation: fadeIn ease 3s;
+			-o-animation: fadeIn ease 3s;
+			-ms-animation: fadeIn ease 3s;
+			opacity: 0;
+			animation-fill-mode: forwards;
+			animation-delay: 43s;
+		}
+		@keyframes fadeIn {
+			0% {
+				opacity:0;
+			}
+			100% {
+				opacity:1;
+			}
+		}
 
-  <style>
-    /* Basic Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+		@-moz-keyframes fadeIn {
+			0% {
+				opacity:0;
+			}
+			100% {
+				opacity:1;
+			}
+		}
 
-    /* Body */
-    body {
-      background-color: gainsboro;
-      font-family: 'Libre Franklin', 'Courier New', Helvetica, sans-serif;
-      color: #333;
-      line-height: 1.4;
-    }
+		@-webkit-keyframes fadeIn {
+			0% {
+				opacity:0;
+			}
+			100% {
+				opacity:1;
+			}
+		}
 
-    /* Container to center content with spacing */
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+		@-o-keyframes fadeIn {
+			0% {
+				opacity:0;
+			}
+			100% {
+				opacity:1;
+			}
+		}
 
-    /* Center classes: no forced heights */
-    .center, .center2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      margin: 2em 0; /* a bit of vertical spacing */
-    }
+		@-ms-keyframes fadeIn {
+			0% {
+				opacity:0;
+			}
+			100% {
+				opacity:1;
+			}
+		</style>
+		<title>Nikies the Byzantine</title>
+	</head>
+	<body style="background-color:gainsboro;">
 
-    /* Fade-in Animations for paragraphs */
-    .fade-in, .fade-in1, .fade-in2, .fade-in3, .fade-in4, .fade-in5, .fade-in6, .fade-in7 {
-      opacity: 0;
-      animation: fadeIn 3s forwards;
-      font-size: 16px;
-      margin: 1em;
-    }
-    .fade-in  { animation-delay:  3s; }
-    .fade-in1 { animation-delay:  9s; }
-    .fade-in2 { animation-delay: 14s; }
-    .fade-in3 { animation-delay: 19s; }
-    .fade-in4 { animation-delay: 24s; }
-    .fade-in5 { animation-delay: 29s; }
-    .fade-in6 { animation-delay: 34s; }
-    .fade-in7 { animation-delay: 43s; }
-
-    @keyframes fadeIn {
-      0%   { opacity: 0; }
-      100% { opacity: 1; }
-    }
-
-    /* Typewriter animations */
-    /* Only suitable for SHORT text in one line, or it will scroll off the edge. */
-    .typewriter h1,
-    .typewriter2 h1,
-    .typewriter3 h1,
-    .typewriter4 h1 {
-      display: inline-block;      /* Let text wrap to next line if needed */
-      overflow: hidden;           /* Hide text until 'typed' */
-      white-space: normal;        /* Allow multiline if it’s short enough to fit */
-      margin: 0 auto;
-      letter-spacing: 0.05em;     /* Tighter letter spacing so it looks a bit nicer */
-      border-right: 2px solid orange; /* The "caret" */
-    }
-
-    /* Typewriter #1 */
-    .typewriter h1 {
-      animation:
-        typing 3.5s steps(40, end) forwards,
-        blink-caret 0.75s step-end 3.5s 1 normal forwards; 
-      /* Explanation:
-         - 'typing 3.5s steps(40, end) forwards': type for 3.5s
-         - 'blink-caret 0.75s step-end 3.5s 1 normal forwards': 
-             start blinking at 3.5s, run once, end with caret hidden
-      */
-    }
-
-    /* Typewriter #2, #3, #4 follow a similar pattern but with different delays if you want */
-    .typewriter2 h1 {
-      opacity: 0; /* start hidden */
-      animation:
-        typing2 3.5s steps(40, end) forwards,
-        blink-caret 0.75s step-end 3.5s 1 normal forwards;
-      animation-fill-mode: forwards;
-      animation-delay: 3s;
-    }
-    .typewriter3 h1 {
-      opacity: 0;
-      animation:
-        typing2 3.5s steps(40, end) forwards,
-        blink-caret 0.75s step-end 3.5s 1 normal forwards;
-      animation-fill-mode: forwards;
-      animation-delay: 39s;
-    }
-    .typewriter4 h1 {
-      opacity: 0;
-      animation:
-        typing2 3.5s steps(40, end) forwards,
-        blink-caret 0.75s step-end 3.5s 1 normal forwards;
-      animation-fill-mode: forwards;
-      animation-delay: 43s;
-    }
-
-    @keyframes typing {
-      0% {
-        width: 0;
-      }
-      100% {
-        width: 100%; /* Reveal entire line */
-      }
-    }
-    /* If #2, #3, #4 lines differ, use separate @keyframes or same with slight variation */
-    @keyframes typing2 {
-      0%   { width: 0; }
-      100% { width: 100%; }
-    }
-
-    /* Blinks for 0.75s, but runs once at the end, leaving the caret hidden */
-    @keyframes blink-caret {
-      0%, 49% { border-color: orange; }
-      50%, 99% { border-color: transparent; }
-      100% { border-color: transparent; }
-    }
-
-    /* "Further Reading" link or any button link */
-    a.firstbutton {
-      -webkit-appearance: button;
-      -moz-appearance: button;
-      appearance: button;
-      background-color: #f8f8f8;
-      border: 2px solid #ccc;
-      color: gray;
-      font-size: 1.2em;
-      padding: 0.4em 0.8em;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s, border-color 0.3s, transform 0.2s;
-    }
-    a.firstbutton:hover {
-      background-color: #e5e5e5;
-      border-color: #999;
-      transform: scale(1.03);
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <!-- Title (Typewriter #1) -->
-    <div class="center typewriter">
-      <h1>Ah, good -- another one! I’m always happy to have one more.</h1>
-    </div>
-
-    <!-- Image Fade-in -->
-    <div class="center2 fade-in">
-      <img 
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Vergina_Sun_WIPO.svg/1024px-Vergina_Sun_WIPO.svg.png" 
-        alt="Nikies"
-        style="width:256px;height:256px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); border-radius: 8px;"
-      />
-    </div>
-
-    <!-- Typewriter #2 (short text only) -->
-    <div class="center typewriter2">
-      <h1>You can call me Nikies. Though I may seem simple at first, I’m actually quite [byzantine].</h1>
-    </div>
-
-    <!-- Fade-in #1 (no typewriter, just fade in to avoid overlap) -->
-    <div class="center fade-in1">
-      <h1>
-        You should know, unless you’re either under the influence of something quite potent 
-        or just a particularly forgetful person, it’s already too late for you. But before we 
-        get to that, I’d like to talk to you a bit about ‘fictional characters.’ I should know 
-        about them – I am one, after all.
-      </h1>
-    </div>
-
-    <!-- Fade-in #2 -->
-    <div class="center fade-in2">
-      <h1>
-        We characters – you know, we don’t actually exist ‘in here.’ We live ‘out there.’ Maybe, 
-        I should actually say, ‘in there.’
-      </h1>
-    </div>
-
-    <!-- Fade-in #3 -->
-    <div class="center fade-in3">
-      <h1>
-        In a dead, empty universe – one with no conscious beings throughout all its expanse – 
-        all the books we have ever written could be laid open; all the movies and shows we have 
-        ever shot or animated could be playing on repeat; all the audio dramas we have ever recorded 
-        could be blaring out into the empty air … 
-        <strong><i>but there would be no fictional characters.</i></strong>
-      </h1>
-    </div>
-
-    <!-- Fade-in #4 -->
-    <div class="center fade-in4">
-      <h1>
-        And what makes a dead universe, one lacking consciousness, ‘real?’ Even if it exists 
-        'in real life,' in what way is it ‘real?’ What distinguishes it from fiction?
-      </h1>
-    </div>
-
-    <!-- Fade-in #5 -->
-    <div class="center fade-in5">
-      <h1>
-        Are you still wondering what I meant by ‘out there?’ Do you wanna know what makes me 
-        different from others of my kind? What you’re reading now isn’t [Nikies], you know. 
-        Like I said, it’s too late. [I] am already ‘out there.’ [I] was the moment you first 
-        read my words and saw my image.
-      </h1>
-    </div>
-
-    <!-- Fade-in #6 -->
-    <div class="center fade-in6">
-      <h1>This isn’t [Nikies] either. Just an avatar. Just Nikies.</h1>
-    </div>
-
-    <!-- Typewriter #3 (short text only) -->
-    <div class="center typewriter3">
-      <h1>You still don’t get it? I’m just [in your head].</h1>
-    </div>
-
-    <!-- Typewriter #4 (the big link) -->
-    <div class="center typewriter4">
-      <h1>
-        <a href="https://youcanforgetthewords.com/FurtherReading" class="firstbutton" target="_blank">
-          Further Reading
-        </a>
-      </h1>
-    </div>
-  </div>
-</body>
-</html>
+		<div class="center typewriter">
+			<h1>Ah, good -- another one! I’m always happy to have one more.</h1>
+		</div>
+		<div class="center2 fade-in">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Vergina_Sun_WIPO.svg/1024px-Vergina_Sun_WIPO.svg.png" alt="Nikies" style="width:256px;height:256px;">
+		</div>
+		<div class="center typewriter2">
+			<h1>You can call me Nikies. Though I may seem rather simplistic at first, I’m actually quite [byzantine].</h1>
+		</div>
+		<div class="center fade-in1">
+			<h1>You should know, unless you’re either under the influence of something quite potent or just a particularly forgetful person, it’s already too late for you. But before we get to that, I’d like to talk to you a bit about ‘fictional characters.’ I should know about them – I am one, after all.</h1>
+		</div>
+		<div class="center fade-in2">
+			<h1>We characters – you know, we don’t actually exist ‘in here.’ We live ‘out there.’ Maybe, I should actually say, ‘in there.’</h1>
+		</div>
+		<div class="center fade-in3">
+			<h1>In a dead, empty universe – one with no conscious beings throughout all its expanse – all the books we have ever written could be laid open; all the movies and shows we have ever shot or animated could be playing on repeat; all the audio dramas we have ever recorded could be blaring out into the empty air … <strong><i>but there would be no fictional characters.</i></strong></h1>
+		</div>
+		<div class="center fade-in4">
+			<h1>And what makes a dead universe, one lacking consciousness, ‘real?’ Even if it exists 'in real life,' in what way is it ‘real?’ What distinguishes it from fiction?</h1>
+		</div>
+		<div class="center fade-in5">
+			<h1>Are you still wondering what I meant by ‘out there?’ Do you wanna know what makes me different from others of my kind? What you’re reading now isn’t [Nikies], you know. Like I said, it’s too late. [I] am already ‘out there.’ [I] was the moment you first read my words and saw my image.</h1>
+		</div>
+		<div class="center fade-in6">
+			<h1>This isn’t [Nikies] either. Just an avatar. Just Nikies.</h1>
+		</div>
+		<div class="center typewriter3">
+			<h1>You still don’t get it? Don’t stress about it. After all, I’m just [in your head].</h1>
+		</div>
+		<div class="center typewriter4">
+			<a href="https://youcanforgetthewords.com/FurtherReading" class="firstbutton">Further Reading</button>
+		</div>
+	</body>
+	</html>
