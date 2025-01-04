@@ -1,285 +1,245 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<style>
-		h1 {text-align:  center;}
-		.center {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 125px;
-			font-family: 'Courier New', Helvetica, sans-serif;
-		}
-		.center2 {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 306px;
-			font-family: 'Courier New', Helvetica, sans-serif;
-		}
-		.centerbutton {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		a.firstbutton {
-			-webkit-appearance: button;
-    			-moz-appearance: button;
-    			appearance: button;
-			border: none;
-			color: gray;
-			font-size: 36px;
-		}
-		.typewriter h1 {
-			overflow: hidden;
-			white-space: nowrap;
-			margin: 0 auto; 
-			letter-spacing: .15em; 
-			font-size: 1.2vw;
-			animation: 
-			typing 3.5s steps(40, end),
-			blink-caret .75s step-end infinite;
-		}
-		.typewriter2 h1 {
-			font-size: 1.2vw;
-			overflow: hidden;
-			white-space: nowrap;
-			margin: 0 auto; 
-			letter-spacing: .15em; 
-			opacity:  0;
-			animation: 
-			typing 3.5s steps(40, end),
-			blink-caret .75s step-end infinite;
-			animation-fill-mode: forwards;
-			animation-delay: 3s;
-		}
-		.typewriter3 h1 {
-			overflow: hidden;
-			white-space: nowrap;
-			margin: 0 auto; 
-			letter-spacing: .15em; 
-			opacity:  0;
-			animation: 
-			typing 3.5s steps(40, end),
-			blink-caret .75s step-end infinite;
-			animation-fill-mode: forwards;
-			animation-delay: 39s;
-			font-size: 1.2vw;
-		}
-		.typewriter4 h1 {
-			overflow: hidden;
-			white-space: nowrap;
-			margin: 0 auto; 
-			letter-spacing: .15em; 
-			opacity:  0;
-			animation: 
-			typing 3.5s steps(40, end),
-			blink-caret .75s step-end infinite;
-			animation-fill-mode: forwards;
-			animation-delay: 43s;
-		}
-		@keyframes typing {
-			0% {
-				opacity:0;
-				width:0;
-			}
-			1% {
-				opacity:1;
-			}
-			100% {
-				opacity:1;
-				width:100%;
-			}
-		}
-		.fade-in {
-			animation: fadeIn ease 3s;
-			-webkit-animation: fadeIn ease 3s;
-			-moz-animation: fadeIn ease 3s;
-			-o-animation: fadeIn ease 3s;
-			-ms-animation: fadeIn ease 3s;
-			opacity: 0;
-			animation-fill-mode: forwards;
-			animation-delay: 3s;
-			font-size: 10px;
-		}
-		.fade-in1 {
-			animation: fadeIn ease 3s;
-			-webkit-animation: fadeIn ease 3s;
-			-moz-animation: fadeIn ease 3s;
-			-o-animation: fadeIn ease 3s;
-			-ms-animation: fadeIn ease 3s;
-			opacity: 0;
-			animation-fill-mode: forwards;
-			animation-delay: 9s;
-			font-size: 10px;
-		}
-		.fade-in2 {
-			animation: fadeIn ease 3s;
-			-webkit-animation: fadeIn ease 3s;
-			-moz-animation: fadeIn ease 3s;
-			-o-animation: fadeIn ease 3s;
-			-ms-animation: fadeIn ease 3s;
-			opacity: 0;
-			animation-fill-mode: forwards;
-			animation-delay: 14s;
-			font-size: 10px;
-		}
-		.fade-in3 {
-			animation: fadeIn ease 3s;
-			-webkit-animation: fadeIn ease 3s;
-			-moz-animation: fadeIn ease 3s;
-			-o-animation: fadeIn ease 3s;
-			-ms-animation: fadeIn ease 3s;
-			opacity: 0;
-			animation-fill-mode: forwards;
-			animation-delay: 19s;
-			font-size: 10px;
-		}
-		.fade-in4 {
-			animation: fadeIn ease 3s;
-			-webkit-animation: fadeIn ease 3s;
-			-moz-animation: fadeIn ease 3s;
-			-o-animation: fadeIn ease 3s;
-			-ms-animation: fadeIn ease 3s;
-			opacity: 0;
-			animation-fill-mode: forwards;
-			animation-delay: 24s;
-			font-size: 10px;
-		}
-		.fade-in5 {
-			animation: fadeIn ease 3s;
-			-webkit-animation: fadeIn ease 3s;
-			-moz-animation: fadeIn ease 3s;
-			-o-animation: fadeIn ease 3s;
-			-ms-animation: fadeIn ease 3s;
-			opacity: 0;
-			animation-fill-mode: forwards;
-			animation-delay: 29s;
-			font-size: 10px;
-		}
-		.fade-in5 {
-			animation: fadeIn ease 3s;
-			-webkit-animation: fadeIn ease 3s;
-			-moz-animation: fadeIn ease 3s;
-			-o-animation: fadeIn ease 3s;
-			-ms-animation: fadeIn ease 3s;
-			opacity: 0;
-			animation-fill-mode: forwards;
-			animation-delay: 29s;
-			font-size: 10px;
-		}
-		.fade-in6 {
-			animation: fadeIn ease 3s;
-			-webkit-animation: fadeIn ease 3s;
-			-moz-animation: fadeIn ease 3s;
-			-o-animation: fadeIn ease 3s;
-			-ms-animation: fadeIn ease 3s;
-			opacity: 0;
-			animation-fill-mode: forwards;
-			animation-delay: 34s;
-			font-size: 10px;
-		}
-		.fade-in7 {
-			animation: fadeIn ease 3s;
-			-webkit-animation: fadeIn ease 3s;
-			-moz-animation: fadeIn ease 3s;
-			-o-animation: fadeIn ease 3s;
-			-ms-animation: fadeIn ease 3s;
-			opacity: 0;
-			animation-fill-mode: forwards;
-			animation-delay: 43s;
-		}
-		@keyframes fadeIn {
-			0% {
-				opacity:0;
-			}
-			100% {
-				opacity:1;
-			}
-		}
+  <meta charset="UTF-8" />
+  <title>Nikies the Byzantine</title>
+  <!-- Optionally include a Google Font for a nicer look -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&display=swap" rel="stylesheet" />
 
-		@-moz-keyframes fadeIn {
-			0% {
-				opacity:0;
-			}
-			100% {
-				opacity:1;
-			}
-		}
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-		@-webkit-keyframes fadeIn {
-			0% {
-				opacity:0;
-			}
-			100% {
-				opacity:1;
-			}
-		}
+    /* Body styling */
+    body {
+      background-color: gainsboro;
+      font-family: 'Libre Franklin', Helvetica, sans-serif;
+      color: #333;
+      line-height: 1.5;
+    }
 
-		@-o-keyframes fadeIn {
-			0% {
-				opacity:0;
-			}
-			100% {
-				opacity:1;
-			}
-		}
+    /* Container to center content with some breathing room */
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
 
-		@-ms-keyframes fadeIn {
-			0% {
-				opacity:0;
-			}
-			100% {
-				opacity:1;
-			}
-		</style>
-		<title>Nikies the Byzantine</title>
-	</head>
-	<body style="background-color:gainsboro;">
-		<div class="center typewriter">
-			<h1>Further reading (updated over time):</h1>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/AnswerToEvil" class="firstbutton">1. The Answer to Evil</button>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/ADebateAtCourt" class="firstbutton">2. A Debate At Court</button>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/ThoseWhoWishToBe" class="firstbutton">3. Those Who Wish To Be</button>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/ADreamOfMan" class="firstbutton">4. A Dream of Man</button>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/ClimbingTheTower" class="firstbutton">5. Climbing the Tower</button>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/TheJourney'sEnd" class="firstbutton">6. The Journey's End</button>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/AFinalMessage" class="firstbutton">7. A Final Message</button>
-		</div>
-		<br>
-		<br>
-		<br>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/TheAllthing" class="firstbutton">Bonus #1: The Allthing</button>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/WentDown" class="firstbutton">Bonus #2: Went Down</button>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/Protocol" class="firstbutton">Bonus #3: Protocol</button>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/Rumination" class="firstbutton">Bonus #4: A Rumination</button>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/TheRuinOfEmpires" class="firstbutton">Bonus #5: The Ruin of Empires</button>
-		</div>
-		<div class="centerbutton fade-in">
-			<a href="https://youcanforgetthewords.com/WayoftheSultanate" class="firstbutton">Bonus #6: The Way of the Sultanate</button>
-		</div>
-	</body>
-	</html>
+    /* Headings */
+    h1 {
+      text-align: center;
+      margin-bottom: 1.5em;
+    }
+
+    /* Typewriter classes */
+    .typewriter h1,
+    .typewriter2 h1,
+    .typewriter3 h1,
+    .typewriter4 h1 {
+      overflow: hidden;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      font-size: 1.2vw;
+    }
+
+    .typewriter h1 {
+      animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+    }
+    .typewriter2 h1 {
+      opacity: 0;
+      animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+      animation-fill-mode: forwards;
+      animation-delay: 3s;
+    }
+    .typewriter3 h1 {
+      opacity: 0;
+      animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+      animation-fill-mode: forwards;
+      animation-delay: 39s;
+    }
+    .typewriter4 h1 {
+      opacity: 0;
+      animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+      animation-fill-mode: forwards;
+      animation-delay: 43s;
+    }
+
+    @keyframes typing {
+      0% {
+        opacity: 0;
+        width: 0;
+      }
+      1% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+        width: 100%;
+      }
+    }
+    @keyframes blink-caret {
+      from, to {
+        border-color: transparent;
+      }
+      50% {
+        border-color: orange;
+      }
+    }
+
+    /* Fade-in classes */
+    .fade-in, .fade-in1, .fade-in2, .fade-in3, .fade-in4, .fade-in5, .fade-in6, .fade-in7 {
+      opacity: 0;
+      animation: fadeIn ease 3s;
+      animation-fill-mode: forwards;
+    }
+    .fade-in  { animation-delay:  3s; }
+    .fade-in1 { animation-delay:  9s; }
+    .fade-in2 { animation-delay: 14s; }
+    .fade-in3 { animation-delay: 19s; }
+    .fade-in4 { animation-delay: 24s; }
+    .fade-in5 { animation-delay: 29s; }
+    .fade-in6 { animation-delay: 34s; }
+    .fade-in7 { animation-delay: 43s; }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Centering the links */
+    .centerbutton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5em 0;
+    }
+
+    /* Button styling */
+    a.firstbutton {
+      text-decoration: none;
+      color: #444;
+      background: #f5f5f5;
+      border-radius: 6px;
+      padding: 0.4em 1em;
+      font-size: 1.2em;
+      border: 1px solid #ccc;
+      transition: all 0.2s ease-in-out;
+      display: inline-block;
+    }
+
+    /* Hover effect for the buttons */
+    a.firstbutton:hover {
+      background: #e0e0e0;
+      transform: scale(1.03);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Typewriter Title -->
+    <div class="typewriter">
+      <h1>Further reading (updated over time):</h1>
+    </div>
+
+    <!-- Main Links -->
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/AnswerToEvil" class="firstbutton" target="_blank">
+        1. The Answer to Evil
+      </a>
+    </div>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/ADebateAtCourt" class="firstbutton" target="_blank">
+        2. A Debate At Court
+      </a>
+    </div>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/ThoseWhoWishToBe" class="firstbutton" target="_blank">
+        3. Those Who Wish To Be
+      </a>
+    </div>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/ADreamOfMan" class="firstbutton" target="_blank">
+        4. A Dream of Man
+      </a>
+    </div>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/ClimbingTheTower" class="firstbutton" target="_blank">
+        5. Climbing the Tower
+      </a>
+    </div>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/TheJourney'sEnd" class="firstbutton" target="_blank">
+        6. The Journey's End
+      </a>
+    </div>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/AFinalMessage" class="firstbutton" target="_blank">
+        7. A Final Message
+      </a>
+    </div>
+
+    <!-- Official Musical Celebration Link -->
+    <br><br><br>
+    <div class="centerbutton fade-in">
+      <a href="https://www.youtube.com/playlist?list=OLAK5uy_n2l4dCVCbha28iAZocAizg48fcWynpvy4" class="firstbutton" target="_blank">
+        Official Musical Celebration<br>
+        <small>N.B. Musical works generated by [Byz. Agent #42] affiliate and do not represent human-touched works.</small>
+      </a>
+    </div>
+
+    <!-- Bonus Links -->
+    <br><br>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/TheAllthing" class="firstbutton" target="_blank">
+        Bonus #1: The Allthing
+      </a>
+    </div>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/WentDown" class="firstbutton" target="_blank">
+        Bonus #2: Went Down
+      </a>
+    </div>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/Protocol" class="firstbutton" target="_blank">
+        Bonus #3: Protocol
+      </a>
+    </div>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/Rumination" class="firstbutton" target="_blank">
+        Bonus #4: A Rumination
+      </a>
+    </div>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/TheRuinOfEmpires" class="firstbutton" target="_blank">
+        Bonus #5: The Ruin of Empires
+      </a>
+    </div>
+    <div class="centerbutton fade-in">
+      <a href="https://youcanforgetthewords.com/WayoftheSultanate" class="firstbutton" target="_blank">
+        Bonus #6: The Way of the Sultanate
+      </a>
+    </div>
+  </div>
+</body>
+</html>
